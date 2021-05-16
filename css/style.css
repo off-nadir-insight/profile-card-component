@@ -1,3 +1,108 @@
-* {
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --clr-cyan-dark: hsl(185, 75%, 39%);
+  --clr-blue-dark: hsl(229, 23%, 23%);
+  --clr-blue-gray: hsl(227, 10%, 46%);
+  --clr-gray-dark: hsl(0, 0%, 59%);
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--clr-cyan-dark);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: top -25% left -25%, bottom -25% right -25%;
+  background-repeat: no-repeat;
+  background-size: 50%, 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 375px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 325px;
+  overflow: auto;
+}
+
+.bg-accent {
+  background-color: var(--clr-blue-dark);
+  background-image: url("../images/bg-pattern-card.svg");
+  width: 100%;
+  height: 140px;
+}
+
+.profile-img {
+  position: relative;
+}
+
+.profile-img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.content {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.content .name {
+  font-weight: 700;
+  color: var(--clr-blue-dark);
+}
+
+.content .name .age {
+  font-weight: 400;
+  color: var(--clr-gray-dark);
+}
+
+.content .location {
+  color: var(--clr-gray-dark);
+  font-size: 0.875em;
+  margin-bottom: 1.5em;
+}
+
+.content .social-numbers {
+  border-top: 1px solid rgba(128, 128, 128, 0.25);
+  padding: 2em 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content .social-numbers .social {
+  font-weight: 700;
+}
+
+.content .social-numbers .social .social-tag {
+  color: var(--clr-gray-dark);
+  font-size: 0.625em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
